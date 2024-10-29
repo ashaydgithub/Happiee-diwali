@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Happy Diwali card</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="cont">
+      <div class="card">
+        <img src="./image/h-d.jpg" />
+        <div class="container">
+          <h1>
+            <b
+              >आपके घर में लक्ष्मी गणेश का वास हो, जीवन से अंधेरा दूर हो, हर
+              खुशी आपके द्वार पर दस्तक दे, और आपकी जिंदगी में खुशियों की महफिल
+              सज जाए। दीपावली की हार्दिक शुभकामनाएं!</b
+            >
+          </h1>
+          <h2>Wishing you</h2>
+
+          <h1 class="ml15">
+            <span class="word">Happy</span>
+            <span class="word">Diwali</span>
+          </h1>
+          <h2>2024</h2>
+          <h3>from ASHA YADAV</h3>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script>
+      anime
+        .timeline({loop: true})
+        .add({
+          targets: ".ml15 .word",
+          scale: [14, 1],
+          opacity: [0, 1],
+          easing: "easeOutCirc",
+          duration: 800,
+          delay: (el, i) => 800 * i,
+        })
+        .add({
+          targets: ".ml15",
+          opacity: 0,
+          easing: "easeOutExpo",
+          duration: 1000,
+          delay: 1000,
+        });
+    </script>
+  </body>
+</html>
